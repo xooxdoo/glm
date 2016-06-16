@@ -145,7 +145,7 @@ class vec2 {
     return new vec2(x, y);
   }
   static clone(v) {
-    return this.fromBuffer(b);
+    return this.fromBuffer(v.buffer);
   }
   static fromBuffer(b) {
     return new vec2(b[0], b[1]);
